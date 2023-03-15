@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Poppins";
+    src: url("./fonts/Poppins-Regular.ttf");
+  }
+  
+@font-face {
+    font-family: "Crimson-Text";
+    src: url("./fonts/CrimsonText-Regular.ttf");
+  }
+
+  p {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-family: "Poppins", sans-serif;
+    color: #a3a3a3;
+  }
