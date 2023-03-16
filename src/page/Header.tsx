@@ -7,7 +7,7 @@ import React from "react";
 
 function Header() {
     return (
-        <div className='bg-top pb-36 bg-no-repeat bg-bg-1'  id="home">
+        <div className='bg-top pb-10 bg-no-repeat bg-bg-1 sm:bg-cover'  id="home">
             <Top />
             <Nav />
             <HeadBody />

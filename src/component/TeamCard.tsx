@@ -11,7 +11,7 @@ const TeamCard = ({ img, name, title }: TeamCardProps) => (
     <img src={img} alt='' className='h-96 w-72' />
     <div className="py-2">
       <p className='font-bold'>{name}</p>
-      <p>{title}</p>
+      <p className='textStyle text-gray-400'>{title}</p>
     </div>
   </div>
 );

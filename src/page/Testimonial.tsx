@@ -1,15 +1,13 @@
 function Testimonial() {
-    const textStyle = "text-sm text-white leading-7"
     const headStyle = "text-yellow-400 text-2xl font-crimson sm:text-5xl"
-    const headStyle1 = "text-gray-300 text-lg font-crimson"
     return (
-        <div className='bg-no-repeat bg-left-top sm:bg-right-top px-10 py-20 sm:px-40 bg-black bg-bg-2'>
-            <h3 className={headStyle1}>100+ HAPPY CLIENTS</h3>
-            <h1 className={headStyle}>TESTIMONIALS</h1>
+        <div className='bg-no-repeat bg-left-top sm:bg-cover sm:bg-left-top px-10 py-20 sm:px-40 bg-black bg-bg-2' id="testimonials">
+            <h3 className='headStyle1'>100+ HAPPY CLIENTS</h3>
+            <h1 className='headStyle text-2xl'>TESTIMONIALS</h1>
             <div className='py-5 flex flex-col gap-3 sm:w-1/2'>
-                <p className={textStyle}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Duis aute irure dolor in reprehenderit in voluptate"</p>
-                <p className={textStyle}><strong><i>John Doe, CEO Microsoft</i></strong></p>
-                <p className={textStyle}>July 27, 2018</p>
+                <p className='textStyle text-white '>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Duis aute irure dolor in reprehenderit in voluptate"</p>
+                <p className='textStyle text-white '><strong><i>John Doe, CEO Microsoft</i></strong></p>
+                <p className='textStyle text-white '>July 27, 2018</p>
             </div>
             <div className='flex'>
                 <div>

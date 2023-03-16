@@ -1,28 +1,11 @@
-import AnchorLink from "react-anchor-link-smooth-scroll";
+import Navigation from "../component/Navigation";
 
 function Footer() {
     return (
-        <div className='bg-black text-center pt-10 pb-5 font-poppins'>
-            <h1 className="text-yellow-400 text-4xl sm:text-5xl font-crimson">BARBERS</h1>
+        <div className='bg-black text-center py-5 font-poppins'>
+            <h1 className="headStyle">BARBERS</h1>
             <ul className="justify-between gap-3 text-white hidden sm:flex sm:px-40 sm:justify-center sm:gap-7">
-                <li>
-                    <AnchorLink className="hover" href="font#home">HOME</AnchorLink>
-                </li>
-                <li>
-                    <AnchorLink className="hover" href="#aboutUs">About Us</AnchorLink>
-                </li>
-                <li>
-                    <AnchorLink className="hover" href="#services">Services</AnchorLink>
-                </li>
-                <li>
-                    <AnchorLink className="hover" href="#tesitimonials">Testimonials</AnchorLink>
-                </li>
-                <li>
-                    <AnchorLink className="hover" href="#team">Our Team</AnchorLink>
-                </li>
-                <li>
-                    <AnchorLink className="hover" href="#contact">Contact Us</AnchorLink>
-                </li>
+            <Navigation/>
             </ul>
             <div className='flex justify-center gap-5 py-2 items-center'>
                 <div>
@@ -35,7 +18,7 @@ function Footer() {
                     <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13" width="13" height="13"><defs><image width="13" height="13" id="img3" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAMAAABFNRROAAAAAXNSR0IB2cksfwAAAJZQTFRF2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUg2qUgvnIzMwAAADJ0Uk5TSq5pAP8kvNwRBn6OjUmqpi950sdl7GDL6Gv3ZIdX1PVEuvRsTsDybela3ZC2pLU3iKyYJqq0AAAAbUlEQVR4nE3MWQ6CUBQE0atdiOCsqCgqDjg/p/1vjgQCWH8n6bRZq606A7xGHfxuIwX6W4a9vgbD0XgynUWyOSikbGFLYq1gnWzAr7SVdqSV9tKBY6ETZNKZS6FrrVv5eZceYE/3UubeH+nrfjnoOwgRaxO+NwAAAABJRU5ErkJggg==" /></defs><style></style><use href="#img3" x="0" y="0" /></svg>
                 </div>
             </div>
-            <h3 className='text-white text-poppins'> BARBERS © 2018. All rights Reserved.</h3>
+            <h3 className='text-white textStyle'> BARBERS © 2018. All rights Reserved.</h3>
         </div>
     )
 }
