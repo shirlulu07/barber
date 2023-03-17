@@ -14,6 +14,10 @@ module.exports = {
         '128': '32rem',
       },
 
+      width: {
+        '128': '32rem',
+      },
+
       backgroundImage: {
         'bg-1': "url('/src/image/2.png')",
         'bg-2': "url('/src/image/3.png')",

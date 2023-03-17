@@ -2,14 +2,16 @@ interface burgerlogo{
     width: string;
     height: string;
     color: string;
+    hide: string;
 }
 
-const Burger = ({width, height, color} : burgerlogo) => (
+const Burger = ({width, height, color, hide} : burgerlogo) => (
 <svg 
     xmlns="http://www.w3.org/2000/svg" 
     height={height} viewBox="0 0 24 24" 
     width={width} 
     fill={color}
+    className={hide}
 >
 <path 
     d="M0 0h24v24H0z" 

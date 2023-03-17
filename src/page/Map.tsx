@@ -19,9 +19,7 @@ function Maps() {
     }
   }, []);
 
-  return (
-    <div className="h-128" ref={mapRef} />
-  );
+  return <div className="sm:h-128 h-80" ref={mapRef} />;
 }
 
 export default Maps;

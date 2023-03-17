@@ -1,5 +1,6 @@
 function HeadBody() {
-  const buttonStyle = "text-white border-2 w-40 h-10 rounded-3xl my-1 hover:bg-yellow-400";
+  const buttonStyle =
+    "text-white border-2 w-40 h-10 rounded-3xl my-1 hover:bg-yellow-400";
   return (
     <div className="pl-8 pr-10 py-32 text-white sm:px-40">
       <div className="pt-24 flex flex-col gap-5">
