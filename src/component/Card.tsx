@@ -10,8 +10,8 @@ interface CardProps {
 const Card = ({ img, name, image, title, isSelected, onClick }: CardProps) => {
   return (
     <div
-      className={`border-2 border-gray flex flex-col items-center gap-2
-    ${isSelected ? " bg-gray-300 shadow-2xl text text-yellow-500" : ""}`}
+      className={`border-2 flex flex-col items-center gap-2
+    ${isSelected ? " bg-gray-200 shadow-2xl text text-yellow-500" : ""}`}
       onClick={onClick}
     >
       <img src={img} alt="" className={image} />
