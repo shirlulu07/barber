@@ -1,24 +1,32 @@
+import React from "react";
+
 interface CardProps {
-  img: string;
-  name: string;
-  title?: string;
-  image: string;
+  informations: {
+    img: string;
+    name: string;
+    image: string;
+    title?: string;
+  };
   isSelected: boolean;
   onClick?: () => void;
 }
 
-const Card = ({ img, name, image, title, isSelected, onClick }: CardProps) => {
+const Card = ({ informations, isSelected, onClick }: CardProps) => {
   return (
     <div
       className={`border-2 flex flex-col items-center gap-2
-    ${isSelected ? " bg-gray-200 shadow-2xl text text-yellow-500" : ""}`}
+    ${isSelected ? " bg-gray-200 shadow-2xl text-yellow-500" : ""}`}
       onClick={onClick}
     >
-      <img src={img} alt="" className={image} />
+      <img
+        src={informations.img}
+        alt={informations.name}
+        className={informations.image}
+      />
       <div className="flex flex-col gap-2 items-center pb-2 w-72">
-        <p className="textStyle font-bold">{name}</p>
-        {title ? (
-          <p className="textStyle text-gray-400">{title}</p>
+        <p className="textStyle font-bold">{informations.name}</p>
+        {informations.title ? (
+          <p className="textStyle text-gray-400">{informations.title}</p>
         ) : (
           <>
             <p
