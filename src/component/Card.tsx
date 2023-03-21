@@ -1,12 +1,15 @@
 import React from "react";
+import Information from "./../page/Contact/Information";
+
+interface information {
+  img: string;
+  name: string;
+  image: string;
+  title?: string;
+}
 
 interface CardProps {
-  informations: {
-    img: string;
-    name: string;
-    image: string;
-    title?: string;
-  };
+  informations: information;
   isSelected: boolean;
   onClick?: () => void;
 }
@@ -30,7 +33,7 @@ const Card = ({ informations, isSelected, onClick }: CardProps) => {
         ) : (
           <>
             <p
-              className={`textStyle text-gray-4001 ${
+              className={`textStyle text-gray-400 ${
                 isSelected ? "text-yellow-500" : null
               }`}
             >
