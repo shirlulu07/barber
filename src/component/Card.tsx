@@ -1,12 +1,5 @@
 import React from "react";
-import Information from "./../page/Contact/Information";
-
-interface information {
-  img: string;
-  name: string;
-  image: string;
-  title?: string;
-}
+import { information } from "./Types";
 
 interface CardProps {
   informations: information;
