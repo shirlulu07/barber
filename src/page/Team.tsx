@@ -5,12 +5,12 @@ import Img5 from "../image/9.png";
 import Card from "./../component/Card";
 
 function Team() {
-  const { selectedCardIndex, handleCardClick } = Selection();
+  const { selectedCard, handleCardClick } = Selection();
 
   const person = [
-    { img: Img5, name: "PAUL NARCH", title: "BARBER", image: "h-96 w-72" },
-    { img: Img6, name: "STEVEN JOSEPH", title: "BARBER", image: "h-96 w-72" },
-    { img: Img7, name: "ALEXANDER DAVID", title: "SHAVER", image: "h-96 w-72" },
+    { img: Img5, name: "PAUL NARCH", title: "BARBER" },
+    { img: Img6, name: "STEVEN JOSEPH", title: "BARBER" },
+    { img: Img7, name: "ALEXANDER DAVID", title: "SHAVER" },
   ];
 
   return (
@@ -22,8 +22,8 @@ function Team() {
           <Card
             key={index}
             informations={person}
-            isSelected={selectedCardIndex === index}
-            onClick={() => handleCardClick(index)}
+            isSelected={selectedCard !== null && selectedCard === person}
+            onClick={() => handleCardClick(person)}
           />
         ))}
       </div>

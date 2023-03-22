@@ -1,13 +1,16 @@
 import { useState } from "react";
+import { information } from "./../interface/Types";
 
-export const Selection = () => {
-  const [selectedCardIndex, setSelectedCardIndex] = useState<number | null>(
-    null
-  );
+export function Selection() {
+  const [selectedCard, setSelectedCard] = useState<information | null>(null);
 
-  const handleCardClick = (index: number) => {
-    setSelectedCardIndex((prevIndex) => (prevIndex === index ? null : index));
+  function handleCardClick(cardd: information) {
+    setSelectedCard((prevCard) => (prevCard === cardd ? null : cardd));
+  }
+  console.log(selectedCard);
+
+  return {
+    selectedCard,
+    handleCardClick,
   };
-
-  return { selectedCardIndex, handleCardClick };
-};
+}

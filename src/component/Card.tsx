@@ -1,5 +1,4 @@
-import React from "react";
-import { information } from "./Types";
+import { information } from "../interface/Types";
 
 interface CardProps {
   informations: information;
@@ -17,7 +16,7 @@ const Card = ({ informations, isSelected, onClick }: CardProps) => {
       <img
         src={informations.img}
         alt={informations.name}
-        className={informations.image}
+        className={informations.title ? "h-96 w-72" : "h-64 w-80"}
       />
       <div className="flex flex-col gap-2 items-center pb-2 w-72">
         <p className="textStyle font-bold">{informations.name}</p>
