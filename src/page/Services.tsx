@@ -1,17 +1,15 @@
-import { Selection } from "../component/Selection";
+import { useState } from "react";
 import Card from "../component/Card";
 import Img2 from "../image/6.png";
 import Img3 from "../image/7.png";
 import Img4 from "../image/8.png";
 
-function Services() {
-  const informa = [
-    { img: Img2, name: "Regular Cut" },
-    { img: Img3, name: "Clipper Cut" },
-    { img: Img4, name: "Razoe Shaver" },
-  ];
-
-  const { selectedCard, handleCardClick } = Selection();
+const Services = () => {
+  const [informations, setInformations] = useState([
+    { id: 1, img: Img2, name: "Regular Cut", isActive: false },
+    { id: 2, img: Img3, name: "Clipper Cut", isActive: false },
+    { id: 3, img: Img4, name: "Razoe Shaver", isActive: false },
+  ]);
 
   const buttonStyle2 =
     "text-white bg-gray-500 border-2 border-gray-500 w-40 h-10 rounded-3xl my-1 hover:bg-yellow-400 hover:border-yellow-400";
@@ -19,18 +17,9 @@ function Services() {
     <div className="text-center px-10 py-20 sm:px-40 bg-gray-100" id="services">
       <h3 className="headStyle1">NOTHING BUT THE BEST</h3>
       <h1 className="headStyle">OUR SERVICES</h1>
-      <div className="flex flex-col gap-5 sm:flex-row justify-center sm:justify-center items-center py-5">
-        {informa.map((informa, index) => (
-          <Card
-            key={index}
-            informations={informa}
-            isSelected={selectedCard !== null && selectedCard === informa}
-            onClick={() => handleCardClick(informa)}
-          />
-        ))}
-      </div>
+      <Card states={[informations, setInformations]} />
     </div>
   );
-}
+};
 
 export default Services;
