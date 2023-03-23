@@ -8,7 +8,13 @@ import { handleCardClick } from "../component/handleCardClick";
 
 const Team = () => {
   const [informations, setInformations] = useState<Iinformation[]>([
-    { id: 1, img: Img5, name: "PAUL NARCH", title: "BARBER", isActive: false },
+    {
+      id: 1,
+      img: Img5,
+      name: "PAUL NARCH",
+      title: "BARBER",
+      isActive: false,
+    },
     {
       id: 2,
       img: Img6,

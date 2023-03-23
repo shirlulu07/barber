@@ -1,10 +1,10 @@
-import { Iinformation } from "../interface/Types";
+import { IInformation } from "../interface/Types";
 
 const handleCardClick = (
   index: number,
-  setInformations: React.Dispatch<React.SetStateAction<Iinformation[]>>
+  setInformations: React.Dispatch<React.SetStateAction<IInformation[]>>
 ) => {
-  setInformations((prev: Iinformation[]) => [
+  setInformations((prev: IInformation[]) => [
     ...prev.map((elem, i) => {
       return {
         ...elem,
