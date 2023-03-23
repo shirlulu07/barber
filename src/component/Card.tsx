@@ -1,7 +1,7 @@
-import { iInformation } from "./../interface/Types";
+import { Iinformation } from "./../interface/Types";
 
 interface ICardProps {
-  informations: iInformation;
+  informations: Iinformation;
   index: number;
   handleCardClick: Function;
 }
