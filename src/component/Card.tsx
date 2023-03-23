@@ -1,10 +1,15 @@
-import { information } from "./../interface/Types";
+import { iInformation } from "./../interface/Types";
+import { useState } from "react";
 
-const Card = ({ states }) => {
-  const [informations, setInformations] = states;
+interface ICardProps {
+  states: Array<iInformation>;
+}
+
+const Card = ({ states }: ICardProps) => {
+  const [informations, setInformations] = useState(states);
 
   function handleCardClick(index: number) {
-    setInformations((prev: information[]) => [
+    setInformations((prev: iInformation[]) => [
       ...prev.map((elem, i) => {
         if (i === index) {
           return {
@@ -17,13 +22,14 @@ const Card = ({ states }) => {
             isActive: false,
           };
         }
+        console.log(elem.isActive);
       }),
     ]);
   }
 
   return (
     <div className="flex flex-col sm:flex-row justify-center sm:justify-center items-center gap-5 py-5">
-      {informations.map((information: information, index: number) => {
+      {informations.map((information: iInformation, index: number) => {
         return (
           <div
             className={`border-2 flex flex-col items-center gap-2 ${
