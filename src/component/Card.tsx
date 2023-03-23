@@ -34,7 +34,7 @@ const Card = ({ states }: ICardProps) => {
           <div
             className={`border-2 flex flex-col items-center gap-2 ${
               information.isActive
-                ? "bg-gray-200 shadow-xl text-yellow-500"
+                ? "bg-gray-200 shadow-xl text-yellow-500 border-gray-400"
                 : ""
             }`}
             onClick={() => handleCardClick(index)}

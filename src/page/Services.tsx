@@ -7,8 +7,6 @@ import Img4 from "../image/8.png";
 const Services = () => {
   const [informations, setInformations] = useState();
 
-  const buttonStyle2 =
-    "text-white bg-gray-500 border-2 border-gray-500 w-40 h-10 rounded-3xl my-1 hover:bg-yellow-400 hover:border-yellow-400";
   return (
     <div className="text-center px-10 py-20 sm:px-40 bg-gray-100" id="services">
       <h3 className="headStyle1">NOTHING BUT THE BEST</h3>
